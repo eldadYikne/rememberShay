@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <div className="site-container">
       <div className="overflow-x-hidden  bg-slate-200 content-wrap">
-        <div className="relative flex w-full justify-center bg-slate-400 shay-img">
+        <div className="relative flex w-full justify-center bg-slate-200 shay-img">
           <img className="max-w-[fit-content]" src={Shay1} />
           <span className="p-6  absolute text-6xl font-medium bottom-0 left-0 w-full bg-[#ffffff42]  text-black  ">
             <span className="">"הנני"</span>
@@ -32,8 +32,12 @@ export const App = () => {
           <div className="bg-white rounded-3xl flex flex-col gap-3 p-3 sm:w-1/3 w-2/3 m-auto mt-5 shadow-2xl">
             <span className="text-xl">לתרומות</span>
             <div className="flex gap-2 text-center justify-center">
-              <img className="h-12 rounded-3xl" src={BitIcon} alt="" />
-              <img className="h-12" src={PayboxIcon} alt="" />
+              <a target="_blank" href="https://www.bitpay.co.il/he">
+                <img className="h-12 rounded-3xl" src={BitIcon} alt="" />
+              </a>
+              <a target="_blank" href="https://www.payboxapp.com/">
+                <img className="h-12 " src={PayboxIcon} alt="" />
+              </a>
             </div>
           </div>
           <div className="px-16 flex flex-col mt-5">
