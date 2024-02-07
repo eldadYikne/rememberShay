@@ -2,20 +2,22 @@ import "./App.css";
 import Shay1 from "./assets/images/shay1.jpg";
 import BitIcon from "./assets/icons/bit.jpg";
 import PayboxIcon from "./assets/icons/paybox.png";
-
 export const App = () => {
   return (
     <div className="site-container">
-      <div className="overflow-x-hidden  bg-slate-200 content-wrap">
-        <div className="relative flex w-full justify-center bg-slate-200 shay-img">
-          <img className="max-w-[fit-content]" src={Shay1} />
-          <span className="p-6  absolute text-6xl font-medium bottom-0 left-0 w-full bg-[#ffffff42]  text-black  ">
+      <div className="overflow-x-hidden flex flex-col items-center  bg-slate-200 content-wrap">
+        <div
+          style={{ backgroundImage: `url(${Shay1})` }}
+          className="relative flex w-full  justify-center items-center h-[500px]  sm:max-w-[1062px]  shay-img bg-no-repeat bg-center"
+        >
+          <span className="p-6  place-self-end	 text-6xl font-medium bottom-0 left-0 w-full bg-[#ffffff42]  text-black  ">
             <span className="">"הנני"</span>
             <span className="mt-3 px-3  text-base flex text-center text-black text- ">
               רס"ן שי שמריז הי"ד נפל בקרב בצפון רצועת עזה בתאריך יד' בטבת התשפ"ד
             </span>
           </span>
         </div>
+
         <div
           dir="rtl"
           className="w-full p-2 flex flex-col text-center  sm:text-2xl   bg-slate-200"
