@@ -2,6 +2,8 @@ import "./App.css";
 import Shay1 from "./assets/images/shay1.jpg";
 import BitIcon from "./assets/icons/bit.jpg";
 import PayboxIcon from "./assets/icons/paybox.png";
+import ReactPlayer from "react-player/lazy";
+
 export const App = () => {
   return (
     <div className="site-container">
@@ -17,7 +19,19 @@ export const App = () => {
             </span>
           </span>
         </div>
-
+        <div className="mt-4 w-full flex justify-center">
+          <ReactPlayer
+            playing={true}
+            style={{ width: "1062px " }}
+            url="https://www.youtube.com/watch?v=DQuW4LZwPBw"
+            controls={true}
+            config={{
+              youtube: {
+                playerVars: { showinfo: 0, autoplay: 1 },
+              },
+            }}
+          />
+        </div>
         <div
           dir="rtl"
           className="w-full p-2 flex flex-col text-center  sm:text-2xl   bg-slate-200"
